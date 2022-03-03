@@ -1,0 +1,353 @@
+
+	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Turnitin, LLC" />
+    <meta name="keywords" content="" /> 
+    <meta name="description" content="" />
+    <meta name="viewport" content="width = initial-scale" />
+    <meta name="viewport" content="height = initial-scale" />
+    
+<title>Turnitin Originality Report</title>
+
+<base href="http://www.turnitin.com">
+<style type="text/css">
+	
+body	{
+	color: #000;
+	background: #ddd;
+	padding: 0;
+	border: 0;
+	font: 14px Arial, Verdana, sans-serif;
+	margin: 0;
+	text-align: center;
+	}
+	
+form	{
+	padding: 0;
+	margin: 0;
+	}
+	
+p	{
+	padding: .8em 1.5em;
+	margin: 0;
+	text-align: left;
+	}
+	
+img	{
+	border: 0;
+	padding: 0;
+	}
+
+div	{
+	padding: 0;
+	border: 0;
+	text-align: left;
+	}
+	
+strong	{
+	font-weight: bold;
+	}
+	
+h2	{
+	font-size: 15px;
+	margin: 20px 0 10px 20px;
+	}
+	
+a:link, a:visited	{
+	text-decoration: underline;
+	color: #00f;
+	}
+	
+a:hover, a:active	{
+	text-decoration: underline;
+	color: #888;
+	}
+	
+img#logo	{
+	float: right;
+	padding-right: 20px;
+	padding-top: 10px;
+	}
+	
+div#container	{
+	border: 1px solid #aaa;
+	width: 770px;
+	margin: 20px auto;
+	background: #fff;
+	padding: 10px 0;
+	}
+	
+div#top	{
+	background: #fff;
+	width: 7in;
+	margin: auto;
+	padding-bottom: 15px;
+	}
+	
+div#content	{
+	background: #fff;
+	}
+	
+#top p	{
+	padding: .3em 0 .3em 20px;
+	}
+
+#top span	{
+	padding-right: 35px;
+	}
+	
+#top p#orig	{
+	padding-top: 15px;
+	}
+	
+#orig span#score.red	{
+	border-right: 18px solid red;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.orange	{
+	border-right: 18px solid orange;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.yellow	{
+	border-right: 18px solid yellow;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.green	{
+	border-right: 18px solid green;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+#orig span#score.blue	{
+	border-right: 18px solid blue;
+	padding: .2em .5em;
+	margin: 0 1em;
+	background: white;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+	border-left: 1px solid #888;
+	}
+	
+div.divider	{
+	width: 7in;
+	border: 1px dotted #888;
+	margin: auto;
+	padding: 4px 0 4px 10px;
+	font-weight: bold;
+	background: #ddd;
+	font-size: 15px;
+	}
+	
+div.links	{
+	width: 7in;
+	margin: auto;
+	}
+	
+.links div	{
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px dotted #888;
+	}
+	
+.links div#last	{
+	padding: 15px 20px 20px 20px;
+	border-bottom: 0;
+	}
+	
+div.number	{
+	float: right;
+	background: white;
+	border: 1px solid #888;
+	margin: 0 0 0 20px;
+	padding: .1em .5em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	}
+	
+div.number-l	{
+	float: left;
+	background: white;
+	border: 1px solid #888;
+	margin: 6px 16px 10px 0;
+	padding: .1em .5em;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 20px;
+	}
+	
+.links div p	{
+	padding: .2em 1.5em .4em 0;
+	}
+	
+.links div p#mess	{
+	padding: .2em 1.5em 0 0;
+	}
+	
+div#body	{
+	line-height: 1.5em;
+	width: 7in;
+	margin: auto;
+	padding-bottom: 20px;
+	}
+	
+#body p	{
+	color: #555;
+	padding-top: 30px;
+	line-height: 20px;
+	}
+
+	
+#body a	{
+	display: block;
+	color: red;
+	margin: 1em 3em;
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding: 1em 1em;
+	border: 1px dotted #888;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 26px;
+	background: #FFFFE5;
+	}
+
+#body span	{
+	color: #555;
+	font-weight: normal;
+	font-size: 14px;
+	}
+
+#body span.number	{
+	display: block;
+	float: right;
+	color: #000;
+	font-weight: normal;
+	border: 1px solid #888;
+	padding: 0 6px;
+	font-weight: bold;
+	margin-left: 15px;
+	font-size: .9em;
+	background: #fff;
+	}
+	
+#actions	{
+	display: none;
+	}
+
+</style>
+
+
+
+</head>
+
+<body id="or_print_report">
+
+
+<div id="container">
+
+<div id="top">
+    <div id="content">
+        <!-- ######### Top Body  ##########################--> 
+        <div id="top_body">
+            <p id="title">
+            <img src="https://www.turnitincdn.com/800404/static2.turnitin.com/r/build/images/b3964fd7e38c8fcbb8bfbf2efc1f0635cb_turnitin_logo.gif" id="logo" width="60">
+            Turnitin Originality Report
+            </p>
+                <div class="general_info">
+                    <p>
+                        <span>CPG103</span>
+                        
+                        by Bibek Poudel
+                        
+                    </p>
+                    <p>
+                        From Html Project-CPG 103 (Project Web Pub & HTML (CPG103))
+                    </p>
+                    <ul>
+                        <li>Processed on 07-Jul-2017 12:36 SGT</li>
+                        <li>ID: 829438715</li>
+                        <li>Word Count: 2173</li>
+                    </ul>
+                </div>
+                <div class="similarity_box">
+                    <div class="overall_similarity">
+                        <div class="color_box green">&nbsp;</div>
+                        <div class="similarity_title">Similarity Index</div>
+                        <div class="similarity_percent">1%</div>
+                    </div>
+                    <div class="similarity_by_source">
+                        <div class="similarity_title">Similarity by Source</div>
+                        <dl>
+                            <dt>Internet&nbsp;Sources:</dt>
+                            <dd>1%</dd>
+                            <div class="clear"></div>
+                            <dt>Publications:</dt>
+                            <dd>0%</dd>
+                            <div class="clear"></div>
+                            <dt>Student&nbsp;Papers:</dt>
+                            <dd>1%</dd>
+                            <div class="clear"></div>
+                        </dl>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                                 
+        </div>
+        <!-- ######### END Top Body  ##########################--> 
+    </div>
+</div>
+
+<div class="divider">sources:</div>
+
+<div class="links">
+
+	<div id="last">
+	<div class="number-l">1</div>
+	<p>1% match (Internet from 22-Oct-2016)</p>
+
+	<a style="color:red" href="http://s0194160cqu1.blogspot.com.au/2012/11/week-3-engagment-activity-5.html">http://s0194160cqu1.blogspot.com.au/2012/11/week-3-engagment-activity-5.html</a>
+
+	</div>
+
+</div>
+
+
+
+<div class="divider">paper text:</div>
+<div id="body">
+Introduction: <a href="javascript:openDSC(3347579350, 2474, '51');" onmouseover="doRollover(1);" onmouseout="undoRollover(1);" id="51" name="1" style="color:red" class="red"><span class="b-ref">1</span>Website is a group of World Wide Web pages usually containing hyperlinks to each other and made available online by an individual, company, educational institution, government, or organization. The</a> title of my project is “Watch Trailer” where the main goal provided to the user is to watch all the latest Hollywood movies trailer as well as the primary goal is to book a movie ticket online. This website is made by using HTML, CSS and JAVASCRIPT to obtain the final result. User can find the all movies trailer in home page, interesting news in news page, and upcoming movies in coming soon, movies which are playing in cinema hall are listed in in theaters, and in contact page the user can book a movie. At the top of the home page the user can find the login and registration page where user can register their details to login the website. Each and every form pages are well validated of this website but still it doesn’t stores the registered user information. Current System: The present system of this site is established by utilizing HTML codes just and the recognition is not in the correct method. The site has an unsightly looks with minimum functions. That site is simply utilize for the news function specifically. Problem Background: Trailer can be described as “an ad or an industrial for a feature movie that will be displayed in the future at a movie theater, the outcome of technical and innovative work.” I have chosen this website as my project because I have seen people cannot find movie trailer list, their proper review, and booking system online at same website, they have to visit different website for movie information. On the other hand, the major problem of this website is that the interface of this site is not more appealing for the users. The user’s information and booked tickets are recorded in a note pad. Some are poorly designed with irregular position of content which makes confusion to the viewers, have bunch of different links, doesn’t have form validation for booking and many more. So, I tried to improve some of the problems in this project. Purposed System: I have actually purposed this system altering all the codes by utilizing CSS, JavaScript and HTML codes. Generally the JavaScript are utilized for the recognition of the kind aspects, the CSS is not more utilized more for the visual user interface however utilize generally for the text and department components. Some of the code of HTML5 is likewise utilized for the recognition function. Looking at the above problem background above, I have tried to make my website better for user. Some of the feature are considered below: • Users can easily open the website and can book ticket from home online, which saves time of the user. • The user interface design is better with suitable color for user interest. • Each and every form have been properly validate so that user can input their details correctly. • The news on the second page of this website provide latest news on celebrity as well as movie discussion. • Links used in this website are understandable, user friendly. • Social links are attached at the bottom of the website in most of the pages so that user can follow, rate and review on their social pages. Objective for creating: The major objective for creating this website are listed below: • To promote every movie trailer present in this website. • For the better user interface design. • To provide all movie details, rating, comments to the user via this website. • To make sure for each and every form are validated using JavaScript. • To make it user friendly i.e., easier to use. • To book ticket from home using this website. • To promote watch trailer website and earn money using Google AdSense. Outline Screen Design: Index page: News Page: In Theater Page: Coming Soon: Ticket Booking Page: Contact Form: Login Form: Registration Page: Output Design: Index Page: News Page: In Theater Page: Coming Soon Page: Book Ticket Page: Contact Page: Login Page: Registration Page: Book Success Page: Registration Success Page: Sign Up Success Page: Test Case: SN. Test Case Test Scripts 1. To inspect the index page open effectively or not. HTML &amp; JS 2 To examine the username field is blank in login page. JS 3 To inspect the password field is blank in login page. JS 4 To inspect whether slider works or not. JS 5 To examine home page is opened after login. JS 6 To inspect the window alert message while going into proper username and password. JS 7 To inspect whether video is played after clicking on play trailer button. JS 8 To examine whether social links are opened or not when clicking to social media buttons. JS 9 To check if form can be submitted without filling first name. JS 10 To examine if form can be submitted without filling surname. JS 11 To inspect if form can be submitted with filling insufficient address. JS 12 To examine if form can be submitted without choosing seat. JS 13 To inspect if form can be submitted without choosing movie. JS 14 To examine if form can be submitted without selecting show time. JS 15 To inspect if form can be submitted with location less than 5 characters. JS 16 To examine if form can be submitted without filling valid email address. JS 17 To inspect if form can be submitted with amount less than 100. JS 18 To examine if the increment and decrement by 1 button works for amount icon. JS 19 To examine if the button book now works or not. JS 20 To know whether the read more button function properly or not. JS Sample Test Cases: Test Case 1 Objective To inspect the index page open effectively or not. Expected Result Index Page need to open appropriately with no mistakes. Actual Result Index Page open appropriately with no mistake or errors. Conclusion The test succeeds. Test Case 2 Objective To examine the username field is blank in login page. Expected Result Must display “the username must be at least 5 character”. Actual Result It displayed the error message. Conclusion The test succeeds. Test Case 3 Objective To inspect the password field is blank in login page. Test Data Admin12345 Expected Result Should display a window alert “Password field is empty”. Actual Result Display the alert “Password field is empty”. Conclusion The test succeeds. Test Case 4 Objective To inspect whether slider works or not. Expected Result Slider should work properly. Actual Result Slider works appropriately. Conclusion The test succeeds. Test Case 5 Objective To examine home page is opened after login. Expected Result Home page should open after login. Actual Result Home page opens after login. Conclusion The test succeeds. Test Case 6 Objective To check the window alert message while entering correct username and password Test Data admin, user12345 Expected Result Should display the alert message ”You have logged into the website” Actual Result Display the alert message “You have logged into the website” Conclusion Test is successful Test Case 7 Objective To inspect whether video is played after clicking on play trailer button. Expected Result Video should be pop-out when play trailer button is pressed. Actual Result Video opened properly. Conclusion The test succeeds. Test Case 8 Objective To check if form can be submitted without filling first name. Expected Result Social media links should function properly. Actual Result Social media pages open when pressed to social icons. Conclusion The test succeeds. Test Case 9 Objective To check if form can be submitted without filling first name. Expected Result “Enter your correct name” should be displayed at bottom. Actual Result It shows “Enter your correct name”. Conclusion The test succeeds. Test Case 10 Objective To examine if form can be submitted without filling surname. Expected Result “Please enter a valid surname” should be displayed at bottom. Actual Result It shows “Please enter a valid surname”. Conclusion The test succeeds. Test Case 11 Objective To inspect if form can be submitted with filling insufficient address. Test data po Expected Result “Location must be 5 character” should be displayed at bottom. Actual Result “Location must be 5 character” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 12 Objective To examine if form can be submitted without choosing seat. Test data No data. Expected Result “Select a seat” should be displayed at bottom. Actual Result “Select a seat” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 13 Objective To inspect if form can be submitted without choosing movie. Test data No data. Expected Result “Choose a movie U want to watch” should be displayed at bottom. Actual Result “Choose a movie U want to watch” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 14 Objective To examine if form can be submitted without selecting show time. Test data No data. Expected Result “Select show time” should be displayed at bottom. Actual Result “Select show time” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 15 Objective To inspect if form can be submitted without filling location. Test data No data. Expected Result “Location Must be 5 characters.” should be displayed at bottom. Actual Result “Location Must be 5 characters.” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 16 Objective To examine if form can be submitted without filling valid email address. Test data pdl. Expected Result “Enter a Valid Email Address.” should be displayed at bottom. Actual Result “Enter a Valid Email Address.” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 17 Objective To inspect if form can be submitted with amount less than 100. Test data 78 Expected Result “Amount must contain hundreds.” should be displayed at bottom. Actual Result “Amount must contain hundreds.” is shown at the bottom of the page. Conclusion The test succeeds. Test Case 18 Objective To examine if the increment and decrement by 1 button works for amount icon. Test data 4 , 2 . Expected Result Increment and decrement button should work properly. Actual Result Increment and decrement button works properly. Conclusion The test succeeds. Test Case 19 Objective To examine if the button book now works or not. Test data No data Expected Result Window alert message “Thank you for your booking” should be displayed at top of the page. Actual Result “Thank you for your booking” is displayed at top of the page. Conclusion The test succeeds. Test Case 20 Objective To know whether the read more button function properly or not. Test data No data Expected Result “Read more” button should work properly. Actual Result “Read more” button worked properly. Conclusion The test succeeds. User Guide: Minimum System requirement: Software requirement: ? Operating System: window 2000 or above, vista, Linux, MAC OS. ? Web browser: Mozilla browser, opera mini, Google chrome, safari, internet explorer. Hardware Requirement: ? Hard disk: 12 GB to above variant. ? Video card: 60mb to above variant. ? Processor: Intel(R) Core(TM) to above variant. User Manual: ? Open the provided CD and play it. ? Install the browser in your PC such as chrome or opera. ? First open the watch trailer folder located inside the CD-Drive and then select and open index.html file. ? When the user opens the home page i.e. index.html page, it shows others pages are linked with home page. ? To book a movie ticket, click “Book Ticket Link”. ? Fill up the provided form to book a ticket. ? Go to contact page to know about our website. ? Press the social media icon at the bottom of the page to visit them. Conclusion: The main purpose of this website is to help the user about the all latest Hollywood movies trailer as well as their review, news and ticket booking system. This website is made by using JavaScript, CSS and HTML. It also consist of weakness, strength and enhancement which are discussed below: Strength: ‣ Images and video are of good quality. ‣ Images slideshow is used to make it more attractive and useful. ‣ It also consist of good user interface. So, that user can run it easily. ‣ Every links work properly. ‣ Every form are well-validated. ‣ It consist of simple color with attractive design. Weakness: ‣ It does have search bar at the top but it didn’t work. ‣ This website is not responsive. ‣ Admin control panel is not available to handle the website. ‣ It doesn’t consist of database for the storage of data. ‣ Username and password of the login form can be seen on the source code easily. ‣ The browser doesn’t support some of the JavaScript. Enhancement: ‣ Search button can be made functional. ‣ Database can be used to store the web data. ‣ Control panel can be made for admin. ‣ PHP, Java Applet, and many other programming language can be added to make this website more dynamic. ‣ User interface design can be made more attractive. ‣ The website can be made responsive. 
+</div>
+</div>
+</body>
+</html>
